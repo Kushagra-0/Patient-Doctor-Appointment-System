@@ -1,0 +1,41 @@
+<div class="full">
+    <header>
+        <nav>
+            <ul class="nav-items">
+                <li><a routerLink="home" routerLinkActive="active">Home</a></li>
+            <li><a routerLink="aboutus" routerLinkActive="active">About</a></li>
+            <li><a routerLink="register" routerLinkActive="active">Register</a></li>
+            <li><a routerLink="login" routerLinkActive="active">Login</a></li>
+            <li><a routerLink="feedback" routerLinkActive="active">Feedback</a></li>
+            <li><a routerLink="logout" routerLinkActive="active">Logout</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="container">
+        <form action="" id="form">
+        <h1>LOGIN</h1>
+            <div class="input-group">
+                <label for="username">Username</label>
+                <input type="text" id="username" name="username">
+                <div class="error"></div>
+            </div>
+             <div class="input-group">
+                <label for="email">Email</label>
+                <input type="text" id="email" name="email" >
+                <div class="error"></div>
+            </div>
+            <div class="input-group">
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password">
+                <div class="error"></div>
+            </div>
+            <br>
+            <div class="input-group">
+                <input type="checkbox" id="rememberme" name="rememberme">
+                <label for="rememberme"><b> Remember Me</b></label>
+            </div>
+            <button type="submit">Submit</button>
+            <p>New user ? <a routerLink="register" routerLinkActive="active">Register here</a></p>    
+        </form>
+    </div> 
+</div>

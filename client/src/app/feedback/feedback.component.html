@@ -1,0 +1,46 @@
+<div class="full">
+    <header>
+        <nav>
+            <ul class="nav-items">
+                    <li><a routerLink="home" routerLinkActive="active">Home</a></li>
+                <li><a routerLink="aboutus" routerLinkActive="active">About</a></li>
+                <li><a routerLink="register" routerLinkActive="active">Register</a></li>
+                <li><a routerLink="login" routerLinkActive="active">Login</a></li>
+                <li><a routerLink="feedback" routerLinkActive="active">Feedback</a></li>
+                <li><a routerLink="logout" routerLinkActive="active">Logout</a></li>
+            </ul>
+        </nav>  
+    </header>
+    <div class="container">
+    <form action="" id="form">
+        <h1>Feedback</h1>
+        <div class="input-group">
+            <label for="username">Username</label>
+            <input type="text" id="username" name="username" required>
+            <div class="error"></div>
+        </div>
+        <div class="input-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required>
+            <div class="error"></div>
+        </div>
+        <div class="input-group">
+        <label for="rating">Rate our service</label>
+            <select id="rating" name="rating" required>
+                <option value="disabled selected"></option>
+                <option value="5">Excellent</option>
+                <option value="4">Good</option>
+                <option value="3">Average</option>
+                <option value="2">Poor</option>
+                <option value="1">Very Poor</option>
+            </select>
+        </div>
+        <div class="input-group">
+        <label for="message">Your thoughts</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+        </div>
+        <button type="submit">Submit</button>
+    </form>
+    </div>
+    </div>
+
